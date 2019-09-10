@@ -82,6 +82,18 @@ class ViewController: UIViewController {
         
         currentGame.playerGuessed(letter: letter)
         
+        updateGameState()
+    }
+    // Game over checking
+    func updateGameState() {
+        if currentGame.incorrectMovesRemaining < 1 {
+            // Round win
+            totalLosses += 1
+        } else if currentGame.word == currentGame.formattedWord {
+            // Round lose
+            totalWins += 1
+        }
+        
         updateUI()
     }
     
