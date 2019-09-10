@@ -12,6 +12,18 @@ struct Game {
     var word: String // guessed word
     var incorrectMovesRemaining: Int // Incorrect tries remaining
     var guessedLetters: [Character] // Tapped buttons list
+    var formattedWord: String {
+        var guessedWord = ""
+        
+        for letter in word {
+            if guessedLetters.contains(letter) {
+                guessedWord += "\(letter) "
+            } else {
+                guessedWord += "● "
+            }
+        }
+        return guessedWord.uppercased()
+    }
     
     // Tapped button processing
     mutating func playerGuessed(letter: Character) {

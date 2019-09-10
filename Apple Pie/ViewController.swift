@@ -49,7 +49,8 @@ class ViewController: UIViewController {
         
         currentGame = Game (
             word: newWord,
-            incorrectMovesRemaining: incorrectMovesAllowed
+            incorrectMovesRemaining: incorrectMovesAllowed,
+            guessedLetters: []
         )
         updateUI()
     }
@@ -60,6 +61,9 @@ class ViewController: UIViewController {
         let imageName = "Tree \(currentGame.incorrectMovesRemaining)"
         let image = UIImage(named: imageName)
         treeImageView.image = image
+        
+        // Guessed word update
+        wordLabel.text = currentGame.formattedWord
         
         // Scores updating
         scoreLabel.text = "WINS: \(totalWins), LOSES: \(totalLosses)"
