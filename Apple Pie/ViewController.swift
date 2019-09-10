@@ -9,6 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Words list to guess
+    var listOFWords = [
+        "melon",
+        "banana",
+        "helicopter",
+        "house",
+        "table",
+        "square"
+    ]
+    
+    // Maximum incorrect tries
+    let incorrectMovesAllowed = 7
+    
+    // Wins and loses amount
+    var totalWins = 0
+    var totalLosses = 0
+    
+    // Current game
+    var currentGame: Game!
 
     @IBOutlet weak var treeImageView: UIImageView!
     
@@ -18,12 +38,32 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        for button in buttons {
-            _ = button
-        }
+        
+        // New round start
+        newRound()
+    }
+    
+    // Starts new round
+    func newRound() {
+        let newWord = listOFWords.removeFirst()
+        
+        currentGame = Game (
+            word: newWord,
+            incorrectMovesRemaining: incorrectMovesAllowed
+        )
     }
 
+    // interface updating
+    func updateUI() {
+        // Image updating
+        let imageName = "Tree \(currentGame.incorrectMovesRemaining)"
+        let image = UIImage(named: imageName)
+        treeImageView.image = image
+        
+        // Scores updating
+        scoreLabel.text = "WINS: \(totalWins), LOSES: \(totalLosses)"
+    }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         sender.isEnabled = false
     }

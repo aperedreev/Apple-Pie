@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3518CF2327CF5700EB38EE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3518CE2327CF5700EB38EE /* Game.swift */; };
 		5C4A06AB2323FAF50080D894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A06AA2323FAF50080D894 /* AppDelegate.swift */; };
 		5C4A06AD2323FAF50080D894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A06AC2323FAF50080D894 /* SceneDelegate.swift */; };
 		5C4A06AF2323FAF50080D894 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A06AE2323FAF50080D894 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C3518CE2327CF5700EB38EE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5C4A06A72323FAF50080D894 /* Apple Pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4A06AA2323FAF50080D894 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C4A06AC2323FAF50080D894 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				5C4A06AA2323FAF50080D894 /* AppDelegate.swift */,
 				5C4A06AC2323FAF50080D894 /* SceneDelegate.swift */,
+				5C3518CE2327CF5700EB38EE /* Game.swift */,
 				5C4A06AE2323FAF50080D894 /* ViewController.swift */,
 				5C4A06B02323FAF50080D894 /* Main.storyboard */,
 				5C4A06B32323FAFC0080D894 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				5C4A06AF2323FAF50080D894 /* ViewController.swift in Sources */,
 				5C4A06AB2323FAF50080D894 /* AppDelegate.swift in Sources */,
 				5C4A06AD2323FAF50080D894 /* SceneDelegate.swift in Sources */,
+				5C3518CF2327CF5700EB38EE /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
