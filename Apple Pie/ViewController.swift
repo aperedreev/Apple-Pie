@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var treeImageView: UIImageView!
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var wordLabel: UILabel!
+    @IBOutlet var buttons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        for button in buttons {
+            _ = button
+        }
     }
 
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        sender.isEnabled = false
+    }
+    
 }
 
