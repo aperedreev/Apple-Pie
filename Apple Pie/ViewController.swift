@@ -51,6 +51,7 @@ class ViewController: UIViewController {
             word: newWord,
             incorrectMovesRemaining: incorrectMovesAllowed
         )
+        updateUI()
     }
 
     // interface updating
@@ -65,7 +66,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        sender.isEnabled = false
+        sender.isEnabled = false // Tapped button disabling
+        let letterString = sender.title(for: .normal)!
+        let letter = Character(letterString.lowercased())
+        
+        currentGame.playerGuessed(letter: letter)
+        
+        updateUI()
     }
     
 }
