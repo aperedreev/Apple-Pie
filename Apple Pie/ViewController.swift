@@ -63,7 +63,13 @@ class ViewController: UIViewController {
         treeImageView.image = image
         
         // Guessed word update
-        wordLabel.text = currentGame.formattedWord
+        var letters = [String]()
+        for letter in currentGame.formattedWord {
+            letters.append(String(letter))
+        }
+        let wordWithSpaces = letters.joined(separator: " ")
+        
+        wordLabel.text = wordWithSpaces
         
         // Scores updating
         scoreLabel.text = "WINS: \(totalWins), LOSES: \(totalLosses)"

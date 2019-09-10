@@ -12,14 +12,14 @@ struct Game {
     var word: String // guessed word
     var incorrectMovesRemaining: Int // Incorrect tries remaining
     var guessedLetters: [Character] // Tapped buttons list
-    var formattedWord: String {
+    var formattedWord: String { // Displays hidden charcaters of guessed word and reveals them if right letter tapped
         var guessedWord = ""
         
         for letter in word {
             if guessedLetters.contains(letter) {
-                guessedWord += "\(letter) "
+                guessedWord += "\(letter)"
             } else {
-                guessedWord += "● "
+                guessedWord += "●"
             }
         }
         return guessedWord.uppercased()
