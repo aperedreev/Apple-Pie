@@ -63,11 +63,11 @@ class ViewController: UIViewController {
         )
         
         enableLetterButtons(true)
-        updateUI()
+        
         } else {
             enableLetterButtons(false)
         }
-        
+        updateUI()
     }
     
     // buttons enabling/disbling
