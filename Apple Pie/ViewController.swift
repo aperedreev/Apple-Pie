@@ -12,12 +12,17 @@ class ViewController: UIViewController {
     
     // Words list to guess
     var listOFWords = [
+        "apple",
         "melon",
         "banana",
         "helicopter",
         "house",
         "table",
-        "square"
+        "square",
+        "watermelon",
+        "milk",
+        "cat",
+        "wind"
     ]
     
     // Maximum incorrect tries
@@ -94,7 +99,7 @@ class ViewController: UIViewController {
         wordLabel.text = wordWithSpaces
         
         // Scores updating
-        scoreLabel.text = "WINS: \(totalWins), LOSES: \(totalLosses)"
+        scoreLabel.text = "WINS: \(totalWins), LOSSES: \(totalLosses)"
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
