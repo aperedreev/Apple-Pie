@@ -21,7 +21,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mW0-xn-h6X" userLabel="Image">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINS: 0 DEFEATS: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vY-Jb-gAy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINS: 0 LOSSES: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vY-Jb-gAy">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="cNW-U5-3Nt"/>

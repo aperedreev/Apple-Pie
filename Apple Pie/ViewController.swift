@@ -75,7 +75,7 @@ class ViewController: UIViewController {
         updateUI()
     }
     
-    // buttons enabling/disbling
+    // buttons enabling/disabling
     func enableLetterButtons(_ enable: Bool) {
         for button in buttons {
             button.isEnabled = enable
